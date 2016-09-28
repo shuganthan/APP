@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ENTITY>
+    <EntityName>APL-TANCY-T02-7.0.12-STG</EntityName>
+    <EntityDescription>Modbus Application</EntityDescription>
+    <EntityIDPrefix>00:01:07:00:00:0c</EntityIDPrefix>
+    <MESSAGES>
+	<Message>
+        <MessageID>10</MessageID>
+        <MessageName>READ_FLOW_DATA</MessageName>
+        <MessageDesc></MessageDesc>
+            <PARAMETERS>
+                <Parameter>
+                    <ParameterID>1</ParameterID>
+                    <ParameterName>total_volume</ParameterName>
+                    <ParameterDesc></ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>2</ParameterID>
+                    <ParameterName>standard_flow</ParameterName>
+                    <ParameterDesc></ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>3</ParameterID>
+                    <ParameterName>flow</ParameterName>
+                    <ParameterDesc></ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>4</ParameterID>
+                    <ParameterName>temperature</ParameterName>
+                    <ParameterDesc></ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter> 
+                <Parameter>
+                    <ParameterID>5</ParameterID>
+                    <ParameterName>pressure</ParameterName>
+                    <ParameterDesc></ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>   
+               <Parameter>
+                    <ParameterID>6</ParameterID>
+                    <ParameterName>timestamp</ParameterName>
+                    <ParameterDesc></ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>              
+            </PARAMETERS>
+        </Message>
+	    <Message>
+            <MessageID>11</MessageID>
+            <MessageName>TANCY_ALERT</MessageName>
+            <MessageDesc>TANCY Alert Data</MessageDesc>
+            <PARAMETERS>
+            	<Parameter>
+                    <ParameterID>1</ParameterID>
+                    <ParameterName>alarm</ParameterName>
+                    <ParameterDesc>Tancy RTU  alarm</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+            </PARAMETERS>
+        </Message>
+	    <Message>
+            <MessageID>12</MessageID>
+            <MessageName>SET_TANCY_CONFIG</MessageName>
+            <MessageDesc>TANCY Alert config</MessageDesc>
+            <PARAMETERS>
+            	<Parameter>
+                    <ParameterID>1</ParameterID>
+                    <ParameterName>save_period</ParameterName>
+                    <ParameterDesc>Tancy RTU data save period</ParameterDesc>
+                    <ParameterType>uint16</ParameterType>
+                    <ParameterTypeID>2</ParameterTypeID>
+                    <ParameterLen>2</ParameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+		        <Parameter>
+                    <ParameterID>2</ParameterID>
+                    <ParameterName>send_period</ParameterName>
+                    <ParameterDesc>Tancy RTU data send period</ParameterDesc>
+                    <ParameterType>uint16</ParameterType>
+                    <ParameterTypeID>2</ParameterTypeID>
+                    <ParameterLen>2</ParameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+		        <Parameter>
+                    <ParameterID>3</ParameterID>
+                    <ParameterName>alarm_period</ParameterName>
+                    <ParameterDesc>Tancy RTU alarm period</ParameterDesc>
+                    <ParameterType>uint16</ParameterType>
+                    <ParameterTypeID>2</ParameterTypeID>
+                    <ParameterLen>2</ParameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+		        <Parameter>
+                    <ParameterID>4</ParameterID>
+                    <ParameterName>pressure_high</ParameterName>
+                    <ParameterDesc>Tancy RTU </ParameterDesc>
+                    <ParameterType>uint16</ParameterType>
+                    <ParameterTypeID>2</ParameterTypeID>
+                    <ParameterLen>2</ParameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+		        <Parameter>
+                    <ParameterID>5</ParameterID>
+                    <ParameterName>pressure_low</ParameterName>
+                    <ParameterDesc>Tancy RTU </ParameterDesc>
+                    <ParameterType>uint16</ParameterType>
+                    <ParameterTypeID>2</ParameterTypeID>
+                    <ParameterLen>2</ParameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+		        <Parameter>
+                    <ParameterID>6</ParameterID>
+                    <ParameterName>temperature_high</ParameterName>
+                    <ParameterDesc>Tancy RTU </ParameterDesc>
+                    <ParameterType>uint16</ParameterType>
+                    <ParameterTypeID>2</ParameterTypeID>
+                    <ParameterLen>2</ParameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+		        <Parameter>
+                    <ParameterID>7</ParameterID>
+                    <ParameterName>temperature_low</ParameterName>
+                    <ParameterDesc>Tancy RTU </ParameterDesc>
+                    <ParameterType>uint16</ParameterType>
+                    <ParameterTypeID>2</ParameterTypeID>
+                    <ParameterLen>2</ParameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+	        </PARAMETERS>
+    	</Message>  
+    </MESSAGES>
+</ENTITY>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ENTITY>
+    <EntityName>APL-3GNIC-M01-4.0.9-STG</EntityName>
+    <EntityDescription>Modbus Application</EntityDescription>
+    <EntityIDPrefix>00:01:04:00:00:09</EntityIDPrefix>
+    <MESSAGES>
+		<Message>
+            <MessageID>1</MessageID>
+            <MessageName>SEND_DATA</MessageName>
+            <MessageDesc>Pushes data from modbus device to switch.</MessageDesc>
+            <PARAMETERS>
+                <Parameter>
+                    <ParameterID>1</ParameterID>
+                    <ParameterName>payload</ParameterName>
+                    <ParameterDesc>Raw ASCII bytes</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>2</ParameterID>
+                    <ParameterName>devid</ParameterName>
+                    <ParameterDesc>RTU device id</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>3</ParameterID>
+                    <ParameterName>ptype</ParameterName>
+                    <ParameterDesc>RTU payload protocol type</ParameterDesc>
+                    <ParameterType>uint16</ParameterType>
+                    <ParameterTypeID>2</ParameterTypeID>
+                    <ParameterLen>2</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>4</ParameterID>
+                    <ParameterName>timestamp</ParameterName>
+                    <ParameterDesc>RTU payload generated timestamp</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>5</ParameterID>
+                    <ParameterName>temperature</ParameterName>
+                    <ParameterDesc>RTU payload temperature</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>6</ParameterID>
+                    <ParameterName>humidity</ParameterName>
+                    <ParameterDesc>RTU payload humidity</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>7</ParameterID>
+                    <ParameterName>inletpressure</ParameterName>
+                    <ParameterDesc>RTU payload inletpressure</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>8</ParameterID>
+                    <ParameterName>outletpressure</ParameterName>
+                    <ParameterDesc>RTU payload outletpressure</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+            </PARAMETERS>
+        </Message>    
+        <Message>
+            <MessageID>2</MessageID>
+            <MessageName>LORA_PAYLOAD</MessageName>
+            <MessageDesc>LORA Payload Data</MessageDesc>
+            <PARAMETERS>
+                <Parameter>
+                    <ParameterID>1</ParameterID>
+                    <ParameterName>EUI</ParameterName>
+                    <ParameterDesc>LORA EUI</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>2</ParameterID>
+                    <ParameterName>Time</ParameterName>
+                    <ParameterDesc>LORA enddevice timestamp</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>3</ParameterID>
+                    <ParameterName>payload</ParameterName>
+                    <ParameterDesc>LORA enddevice payload</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>4</ParameterID>
+                    <ParameterName>RSSI</ParameterName>
+                    <ParameterDesc>LORA RSSI</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>5</ParameterID>
+                    <ParameterName>SNR</ParameterName>
+                    <ParameterDesc>LORA SNR</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+            </PARAMETERS>
+        </Message>
+        <Message>
+            <MessageID>3</MessageID>
+            <MessageName>SEND_APP_ALERT</MessageName>
+            <MessageDesc>Modbus Lua Application Alert.</MessageDesc>
+            <PARAMETERS>
+                <Parameter>
+                    <ParameterID>1</ParameterID>
+                    <ParameterName>alert_code</ParameterName>
+                    <ParameterDesc>Modbus Lua Application error.</ParameterDesc>
+                    <ParameterType>uint8</ParameterType>
+                    <ParameterTypeID>1</ParameterTypeID>
+                    <ParameterLen>1</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>2</ParameterID>
+                    <ParameterName>alert_desc</ParameterName>
+                    <ParameterDesc>Modbus Lua Application error description.</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                 </Parameter>
+            </PARAMETERS>
+        </Message>
+        <Message>
+            <MessageID>4</MessageID>
+            <MessageName>GNIC_PAYLOAD</MessageName>
+            <MessageDesc>3GNIC  Payload Data</MessageDesc>
+            <PARAMETERS>
+                <Parameter>
+                    <ParameterID>1</ParameterID>
+                    <ParameterName>sid</ParameterName>
+                    <ParameterDesc>sensor id</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>2</ParameterID>
+                    <ParameterName>payload</ParameterName>
+                    <ParameterDesc>3g nic payload containing presssure and temperature samples for last one hour</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+            </PARAMETERS>
+        </Message>
+        <Message>
+            <MessageID>5</MessageID>
+            <MessageName>SET_CONFIG_TEMPERATURE</MessageName>
+            <MessageDesc>3GNIC Set temperature range</MessageDesc>
+            <PARAMETERS>
+                <Parameter>
+                    <ParameterID>1</ParameterID>
+                    <ParameterName>ll</ParameterName>
+                    <ParameterDesc>temperature lower limit</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>2</ParameterID>
+                    <ParameterName>ul</ParameterName>
+                    <ParameterDesc>temperature upper limit</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+             </PARAMETERS>
+        </Message>
+        <Message>
+            <MessageID>6</MessageID>
+            <MessageName>SET_CONFIG_PRESSURE</MessageName>
+            <MessageDesc>3GNIC Set pressure range</MessageDesc>
+            <PARAMETERS>
+                <Parameter>
+                    <ParameterID>1</ParameterID>
+                    <ParameterName>ll</ParameterName>
+                    <ParameterDesc>pressure lower limit</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>2</ParameterID>
+                    <ParameterName>ul</ParameterName>
+                    <ParameterDesc>pressure upper limit</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+             </PARAMETERS>
+        </Message>
+        <Message>
+            <MessageID>7</MessageID>
+            <MessageName>SET_CONFIG_SAMPLING_INTERVAL</MessageName>
+            <MessageDesc>3GNIC Set sampling interval</MessageDesc>
+            <PARAMETERS>
+                <Parameter>
+                    <ParameterID>1</ParameterID>
+                    <ParameterName>si</ParameterName>
+                    <ParameterDesc>sampling interval</ParameterDesc>
+                    <ParameterType>uint16</ParameterType>
+                    <ParameterTypeID>2</ParameterTypeID>
+                    <ParameterLen>2</ParameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+             </PARAMETERS>
+        </Message>
+        <Message>
+            <MessageID>8</MessageID>
+            <MessageName>SET_CONFIG_UPLOAD_INTERVAL</MessageName>
+            <MessageDesc>3GNIC Set upload interval</MessageDesc>
+            <PARAMETERS>
+                <Parameter>
+                    <ParameterID>1</ParameterID>
+                    <ParameterName>ui</ParameterName>
+                    <ParameterDesc>upload interval</ParameterDesc>
+                    <ParameterType>uint8</ParameterType>
+                    <ParameterTypeID>1</ParameterTypeID>
+                    <ParameterLen>1</ParameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+             </PARAMETERS>
+        </Message>
+        <Message>
+            <MessageID>9</MessageID>
+            <MessageName>GNIC_ALERT</MessageName>
+            <MessageDesc>3GNIC  Alert Data</MessageDesc>
+            <PARAMETERS>
+                <Parameter>
+                    <ParameterID>1</ParameterID>
+                    <ParameterName>sid</ParameterName>
+                    <ParameterDesc>sensor id</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>2</ParameterID>
+                    <ParameterName>payload</ParameterName>
+                    <ParameterDesc>3g nic payload containing presssure and temperature sample when alarm is raised</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>3</ParameterID>
+                    <ParameterName>alarm</ParameterName>
+                    <ParameterDesc>3g nic alarm</ParameterDesc>
+                    <ParameterType>uint32</ParameterType>
+                    <ParameterTypeID>3</ParameterTypeID>
+                    <ParameterLen>4</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+            </PARAMETERS>
+        </Message>
+	 <Message>
+            <MessageID>10</MessageID>
+            <MessageName>READ_FLOW_DATA</MessageName>
+            <MessageDesc></MessageDesc>
+            <PARAMETERS>
+                <Parameter>
+                  <ParameterID>1</ParameterID>
+                  <ParameterName>result_code</ParameterName>
+                  <ParameterDesc>0 = Request Succeeded; Non zero = Error</ParameterDesc>
+                  <ParameterType>uint32</ParameterType>
+                  <ParameterTypeID>3</ParameterTypeID>
+                  <ParameterLen>4</ParameterLen>
+                  <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                  <ParameterID>2</ParameterID>
+                  <ParameterName>error_details</ParameterName>
+                  <ParameterDesc>Optional description of error</ParameterDesc>
+                  <ParameterType>byte-array</ParameterType>
+                  <ParameterTypeID>11</ParameterTypeID>
+                  <ParameterLen>0</ParameterLen>
+                  <ParameterDir>Response</ParameterDir>
+                </Parameter>            
+                <Parameter>
+                    <ParameterID>3</ParameterID>
+                    <ParameterName>total_volume</ParameterName>
+                    <ParameterDesc></ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>4</ParameterID>
+                    <ParameterName>standard_flow</ParameterName>
+                    <ParameterDesc></ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>5</ParameterID>
+                    <ParameterName>flow</ParameterName>
+                    <ParameterDesc></ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+                <Parameter>
+                    <ParameterID>6</ParameterID>
+                    <ParameterName>temperature</ParameterName>
+                    <ParameterDesc></ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter> 
+                <Parameter>
+                    <ParameterID>7</ParameterID>
+                    <ParameterName>pressure</ParameterName>
+                    <ParameterDesc></ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>   
+               <Parameter>
+                    <ParameterID>8</ParameterID>
+                    <ParameterName>timestamp</ParameterName>
+                    <ParameterDesc></ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</ParameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>              
+            </PARAMETERS>
+        </Message>
+	<Message>
+            <MessageID>11</MessageID>
+            <MessageName>TANCY_ALERT</MessageName>
+            <MessageDesc>TANCY Alert Data</MessageDesc>
+            <PARAMETERS>
+            	<Parameter>
+                    <ParameterID>1</ParameterID>
+                    <ParameterName>alarm</ParameterName>
+                    <ParameterDesc>Tancy RTU  alarm</ParameterDesc>
+                    <ParameterType>string</ParameterType>
+                    <ParameterTypeID>14</ParameterTypeID>
+                    <ParameterLen>0</parameterLen>
+                    <ParameterDir>Response</ParameterDir>
+                </Parameter>
+            </PARAMETERS>
+        </Message>
+	 <Message>
+            <MessageID>11</MessageID>
+            <MessageName>SET_TANCY_CONFIG</MessageName>
+            <MessageDesc>TANCY Alert config</MessageDesc>
+            <PARAMETERS>
+            	<Parameter>
+                    <ParameterID>1</ParameterID>
+                    <ParameterName>save_period</ParameterName>
+                    <ParameterDesc>Tancy RTU data save period</ParameterDesc>
+                    <ParameterType>uint16</ParameterType>
+                    <ParameterTypeID>2</ParameterTypeID>
+                    <ParameterLen>2</parameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+		<Parameter>
+                    <ParameterID>2</ParameterID>
+                    <ParameterName>send_period</ParameterName>
+                    <ParameterDesc>Tancy RTU data send period</ParameterDesc>
+                    <ParameterType>uint16</ParameterType>
+                    <ParameterTypeID>2</ParameterTypeID>
+                    <ParameterLen>2</parameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+		<Parameter>
+                    <ParameterID>3</ParameterID>
+                    <ParameterName>alarm_period</ParameterName>
+                    <ParameterDesc>Tancy RTU alarm period</ParameterDesc>
+                    <ParameterType>uint16</ParameterType>
+                    <ParameterTypeID>2</ParameterTypeID>
+                    <ParameterLen>2</parameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+		<Parameter>
+                    <ParameterID>4</ParameterID>
+                    <ParameterName>pressure_high</ParameterName>
+                    <ParameterDesc>Tancy RTU </ParameterDesc>
+                    <ParameterType>uint16</ParameterType>
+                    <ParameterTypeID>2</ParameterTypeID>
+                    <ParameterLen>2</parameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+		<Parameter>
+                    <ParameterID>5</ParameterID>
+                    <ParameterName>pressure_low</ParameterName>
+                    <ParameterDesc>Tancy RTU </ParameterDesc>
+                    <ParameterType>uint16</ParameterType>
+                    <ParameterTypeID>2</ParameterTypeID>
+                    <ParameterLen>2</parameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+		<Parameter>
+                    <ParameterID>6</ParameterID>
+                    <ParameterName>temperature_high</ParameterName>
+                    <ParameterDesc>Tancy RTU </ParameterDesc>
+                    <ParameterType>uint16</ParameterType>
+                    <ParameterTypeID>2</ParameterTypeID>
+                    <ParameterLen>2</parameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+		<Parameter>
+                    <ParameterID>7</ParameterID>
+                    <ParameterName>temperature_low</ParameterName>
+                    <ParameterDesc>Tancy RTU </ParameterDesc>
+                    <ParameterType>uint16</ParameterType>
+                    <ParameterTypeID>2</ParameterTypeID>
+                    <ParameterLen>2</parameterLen>
+                    <ParameterDir>Request</ParameterDir>
+                </Parameter>
+	    </PARAMETERS>
+    	</Message>  
+    </MESSAGES>
+</ENTITY>
